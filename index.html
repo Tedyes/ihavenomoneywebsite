@@ -7,18 +7,14 @@
     <link href="/style.css" rel="stylesheet" type="text/css" media="all">
   </head>
   <body>
-    <marquee behavior="scroll" SCROLLAMOUNT="250"><img src="homani.gif"><img src="homani.gif"><img src="homani.gif"><img src="homani.gif"><img src="homani.gif"></marquee>
+    <marquee
+      direction="down"
+      width="500"
+      height="500"
+      behavior="alternate"
+      class="outlined">
+      <marquee behavior="alternate"><img src="homani.gif"></marquee>
+    </marquee>
     <p><mark>wow</mark></p>
   </body>
 </html>
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    const marquee = document.querySelector("marquee");
-    marquee.addEventListener("mouseover", function() {
-      marquee.setAttribute("scrollamount", "0");
-    });
-    marquee.addEventListener("mouseout", function() {
-      marquee.setAttribute("scrollamount", "250");
-    });
-  });
-</script>
