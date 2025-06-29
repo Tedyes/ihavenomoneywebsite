@@ -56,18 +56,18 @@
     <link rel="preload" as="image" href="mizukis/48.webp">
 
     <style>
-      @font-face { font-family: yurukastd; src: url('yurukastd.ttf'); } 
+      @font-face { font-family: yurukastd; src: url('fonts/yurukastd.ttf'); } 
       body {
         background-color: rgb(245, 213, 234);
         font-family:yurukastd;
         color:white;
         max-width: 2000px;
-        margin: auto;
         padding: 15px 25px 0 25px;
       }
       a {
         color: white;
         text-decoration: none;
+        text-align: center;
       }
       a:hover {
         text-decoration: underline;
@@ -78,13 +78,13 @@
       }
       .rtext {
         display: inline-block;
-        animation: uhsp 2s ease-in-out infinite;
+        animation: uhsp 2.5s ease-in-out infinite;
         transform-origin: center;
       }
       @keyframes uhsp {
-        0%   { transform: rotate(-10deg); }
-        50%  { transform: rotate(10deg); }
-        100%   { transform: rotate(-10deg); }
+        0%   { transform: rotate(-5deg); }
+        50%  { transform: rotate(5deg); }
+        100%   { transform: rotate(-5deg); }
       }
       .flyyy {
         position: relative;
@@ -104,10 +104,19 @@
   </head>
 
   <body>
-    <p style="font-size:25px;" class="rtext">
-        <a href="https://tedyes.github.io/ihavenomoneywebsite/">There</a>
-      </p>
+    <audio autoplay loop>
+        <source src="musics/IDSMILE.ogg" type="audio/ogg">
+    </audio>
+
+    <a href="https://www.youtube.com/@tedyes">
+      <img src="whats/youtube-123.png" style="float:right;width:42px;height:42px;margin-left: 8px;">
+    </a>
+    <a href="https://github.com/Tedyes">
+      <img src="whats/github-seeklogo.png" style="float:right;width:40px;height:40px;">
+    </a>
     <main>
+      <p style="font-size:25px;" class="rtext">HELLO!!!</p>
+
       <p style="
       text-align:center;
       font-size:75px;"
