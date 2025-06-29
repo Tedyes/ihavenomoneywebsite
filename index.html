@@ -104,10 +104,6 @@
   </head>
 
   <body>
-    <audio autoplay loop>
-        <source src="musics/IDSMILE.ogg" type="audio/ogg">
-    </audio>
-
     <a href="https://www.youtube.com/@tedyes">
       <img src="whats/youtube-123.png" style="float:right;width:42px;height:42px;margin-left: 8px;">
     </a>
@@ -150,7 +146,20 @@
     </main>
 
     <footer>
+      <iframe id="ytahh" class="rtext" width="250" height="250" frameborder="0"></iframe>
       <p>i hate myself</p>
     </footer>
+
+    <script>
+      const ytvuide = document.getElementById('ytahh');
+      const muscs = [
+        "https://www.youtube-nocookie.com/embed/l-OtSO4dsLM?si=ApKnI0wIwmRjiO7p?autoplay=1"
+      ];
+      function ohmusic() {
+        const wow = Math.floor(Math.random() * muscs.length);
+        ytvuide.src = muscs[wow];
+      }
+      ohmusic();
+    </script>
   </body>
 </html>
