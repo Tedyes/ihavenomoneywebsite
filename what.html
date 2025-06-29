@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>idk</title>
+  <link rel="icon" type="image/x-icon" href="icon.ico">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background: #fff;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    #visualizer {
+      width: 1000px;
+      height: 1000px;
+      background: #fff;
+      border: 2px solid #444;
+      border-radius: 10px;
+      display: block;
+    }
+
+    #audioFile {
+      margin-top: 20px;
+      background: #fff;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="visualizer"></canvas>
+  <input type="file" id="audioFile" accept="audio/*">
+
+  <script src="visualizer.js"></script>
+</body>
+</html>
