@@ -37,6 +37,20 @@
         50%  { transform: rotate(10deg); }
         100%   { transform: rotate(-10deg); }
       }
+      .flyyy {
+        position: relative;
+        animation-name: fuc;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+      }
+      @keyframes fuc {
+        0%, 100% {
+          top: 15px;
+        }
+        50% {
+          top: -15px;
+        }
+      }
     </style>
   </head>
 
@@ -50,11 +64,33 @@
       font-size:75px;"
       ><mark>placeholder</mark> tedyes website</p>
 
-      <img src="mizukis/sleepy.webp" style="width:450px;height:550px;">
-      <img src="mizukis/movie.webp" style="width:450px;height:525px;">
-      <img src="mizukis/happi.webp" style="width:450px;height:550px;">
-      <img src="mizukis/littlesad.webp" style="width:450px;height:550px;">
+      <img id="mizu1" class="flyyy" src="mizukis/0.webp" style="width:400px;height:500px;">
+      <img id="mizu2" class="flyyy" src="mizukis/1.webp" style="width:400px;height:500px;">
+      <img id="mizu3" class="flyyy" src="mizukis/2.webp" style="width:400px;height:500px;">
+      <img id="mizu4" class="flyyy" src="mizukis/3.webp" style="width:400px;height:500px;">
+
+      <script>
+        const f = document.querySelectorAll('.flyyy');
+        f.forEach(_ => {
+          const duration = (Math.random() * 3 + 2).toFixed(1.5);
+          _.style.animationDuration = `${duration}s`;
+        });
+        
+        const mizs = [
+          document.getElementById('mizu1'),
+          document.getElementById('mizu2'),
+          document.getElementById('mizu3'),
+          document.getElementById('mizu4')
+        ];
+        function changeImage() {
+          mizs.forEach(wahh => {
+            wahh.src = "mizukis/"+Math.floor(Math.random() * 49)+".webp";
+          });
+        }
+        setInterval(changeImage, 2500);
+      </script>
     </main>
+
     <footer>
       <p>i hate myself</p>
     </footer>
